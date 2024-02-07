@@ -1,6 +1,7 @@
 .lista-produtos {
     height: calc(100% - 250px);
     overflow: auto;
+    margin-inline: 20px;
 }
 
 .footer-cart {
@@ -11,6 +12,8 @@
 
 .footer-cart-value {
     margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-bottom: 22px;
     display: flex;
     justify-content: space-between;

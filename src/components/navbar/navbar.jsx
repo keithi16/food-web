@@ -13,22 +13,21 @@ function Navbar(props) {
 
   return (
     <div className="navbar">
-        <img src={logo} className="logotipo" alt="Logotipo" />
+        <Link to="/">
+          <img src={logo} className="logotipo" alt="Logotipo" />
+        </Link>
 
         {
           props.showMenu && (
             <div className="menu">
               <Link to="/historico">Histórico</Link>
               <button onClick={openSidebar} className="btn btn-red">
-                <img src={bag} className="icon" />
+                <img src={bag} className="icon" alt="sacola de compras" />
                 Sacola
               </button>
             </div>
           ) 
         }
-
-       
-
         <Cart />
     </div>
   )
